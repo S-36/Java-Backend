@@ -37,11 +37,11 @@
 		<artifactId>spring-boot-starter-web</artifactId>
 	</dependency>
 
-	<!-- Spring Security (filtros JWT van aquí) -->
+	<!-- Spring Security  
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-security</artifactId>
-	</dependency>
+	</dependency> -->
 
 	<!-- JPA + Hibernate (tu ORM) -->
 	<dependency>
@@ -90,9 +90,9 @@
 
 	<!-- Variables de entorno (.env file) -->
 	<dependency>
-		<groupId>io.github.cdimascio</groupId>
-		<artifactId>dotenv-java</artifactId>
-		<version>3.0.0</version>
+	    <groupId>me.paulschwarz</groupId>
+	    <artifactId>spring-dotenv</artifactId>
+	    <version>2.5.4</version>
 	</dependency>
 
 	<!-- Hot reload en desarrollo -->

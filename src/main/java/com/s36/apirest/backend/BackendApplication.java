@@ -3,6 +3,7 @@ package com.s36.apirest.backend;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
 public class BackendApplication {
 

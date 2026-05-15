@@ -10,8 +10,8 @@ import io.jsonwebtoken.security.Keys;
 
 @Service
 public class JwtService {
-    public String SecretKey = System.getenv("SECRET_KEY");
-    public Long Expiration = Long.parseLong(System.getenv("EXPIRATION"));
+    public String SecretKey = System.getenv("JWT_SECRET_KEY");
+    public Long Expiration = System.getenv("JWT_EXPIRATION") != null ? Long.parseLong(System.getenv("JWT_EXPIRATION")) : 3600000L;
 
     public String generateToken(User user) {
         Date now = new Date();
