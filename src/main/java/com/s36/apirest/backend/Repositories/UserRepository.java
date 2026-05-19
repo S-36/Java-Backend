@@ -6,5 +6,5 @@ import com.s36.apirest.backend.models.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    
+    User findByEmail(String email);
 }
